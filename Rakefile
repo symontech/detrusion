@@ -17,10 +17,10 @@ Jeweler::Tasks.new do |gem|
   gem.name = "detrusion"
   gem.homepage = "http://github.com/symontech/detrusion"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
-  gem.email = ""
-  gem.authors = [""]
+  gem.summary = "web application firewall for rails applications"
+  gem.description = "detrusion detects and prevents attacks on your web applications and blocks malicious users"
+  gem.email = "info@detrusion.com"
+  gem.authors = ["Simon Wepfer"]
   # dependencies defined in Gemfile
 end
 Jeweler::RubygemsDotOrgTasks.new
