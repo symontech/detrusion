@@ -15,7 +15,7 @@ require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
   gem.name = "detrusion"
-  gem.homepage = "http://github.com/symontech/detrusion"
+  gem.homepage = "http://detrusion.com"
   gem.license = "MIT"
   gem.summary = "web application firewall for rails applications"
   gem.description = "detrusion detects and prevents attacks on your web applications and blocks malicious users"
