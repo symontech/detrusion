@@ -20,17 +20,17 @@ Rails 2: include the gem in config/environment.rb
 2) Include the detrusion module in your application controller (app/controllers/application_controller.rb)
 and insert the before_filter:
 
-	include Detrusion
-	before_filter :detrusion_check
+  include Detrusion
+  before_filter :detrusion_check
 
 3) Go to http://detrusion.com and create an account. You'll manage your black-/ whitelists and firewall settings there.
 
 4) Paste the configuration as explained in config/environments/production.rb:
 
-	DETRUSION_CONFIG = {
-		:user => 'your-username',
-		:api => 'your-secret-api-key'
-	}
+  DETRUSION_CONFIG = {
+    :user => 'your-username',
+    :api => 'your-secret-api-key'
+  }
 	
 That's it. Your application will detect XSS and SQL Injection attempts and block the attacker's IP.
 
