@@ -34,5 +34,5 @@ That's it. Your application will detect XSS and SQL Injection attempts and block
 
 == Copyright
 
-(c) 2011 netsense llc
+(c) 2011 netsense llc, http://netsense.ch
 
