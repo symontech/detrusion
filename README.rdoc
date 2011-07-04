@@ -48,6 +48,8 @@ of failed logins. Use the method detrusion_report for that purpose, example:
     detrusion_report                       # increase counter
   end
 
+Use the web gui on http://detrusion.com to set the threshold and to configure additional options.
+
 == Copyright
 
 (c) 2011 netsense llc, http://netsense.ch
