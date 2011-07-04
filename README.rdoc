@@ -30,7 +30,22 @@ and insert the before_filter:
     :api => 'your-secret-api-key'
   }
 	
-That's it. Your application will detect XSS and SQL Injection attempts and block the attacker's IP.
+That's it. Your web application now detects XSS and SQL injection attempts and blocks the attacker's IP.
+
+== Protect against brute force attacks
+
+If your application supports authentication, you may want to block an IP after crossing the threshold
+of failed logins. Use the method detrusion_report for that purpose, example with authlogic
+
+  # in the user session controller
+  @user_session = UserSession.new(params[:user_session])
+  if @user_session.save
+    flash[:notice] = "Login successful!"
+    ...
+  else
+    flash[:error] = "Login failed!"
+    detrusion_report                       # increase counter
+  end
 
 == Copyright
 
