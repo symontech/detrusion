@@ -1,7 +1,8 @@
-= detrusion
+= detrusion - Web Application Firewall for Rails
 
 Detrusion automatically detects XSS and JavaScript Injection attempts and blocks the attacker's IP address.
-It works together with the management interface on http://detrusion.com
+Optionally, it can be used to protect against brute force attacks.
+It is easy to set up and managed by the web interface on http://detrusion.com
 
 == Installation
 
@@ -12,7 +13,7 @@ Rails 3: include detrusion in your Gemfile
   gem 'detrusion'
 
 Rails 2: include the gem in config/environment.rb
-  config.gem "detrusion"
+  config.gem 'detrusion'
 
 
 2) Include Detrusion and its before_filter in the application controller:
