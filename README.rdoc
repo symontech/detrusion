@@ -15,9 +15,9 @@ Rails 2: include the gem in config/environment.rb
   config.gem "detrusion"
 
 
-2) Include the detrusion module in your application controller (app/controllers/application_controller.rb)
-and insert the before_filter:
+2) Include Detrusion and its before_filter in the application controller:
 
+  # app/controllers/application_controller.rb
   include Detrusion
   before_filter :detrusion_check
 
