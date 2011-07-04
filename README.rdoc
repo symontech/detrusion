@@ -21,7 +21,7 @@ Rails 2: include the gem in config/environment.rb
   include Detrusion
   before_filter :detrusion_check
 
-3) Go to http://detrusion.com and create an account. You'll manage your black-/ whitelists and firewall settings there.
+3) Go to http://detrusion.com and create an account (basic features are free). You'll manage your black-/ whitelists and firewall settings there.
 
 4) Paste the configuration as shown in the application settings on detrusion.com
 
