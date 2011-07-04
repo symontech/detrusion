@@ -25,6 +25,7 @@ and insert the before_filter:
 
 4) Paste the configuration as shown in the application settings on detrusion.com
 
+  # config/environments/production.rb
   DETRUSION_CONFIG = {
     :user => 'your-username',
     :api => 'your-secret-api-key'
@@ -35,7 +36,7 @@ That's it. Your web application now detects XSS and SQL injection attempts and b
 == Protect against brute force attacks
 
 If your application supports authentication, you may want to block an IP after crossing the threshold
-of failed logins. Use the method detrusion_report for that purpose, example with authlogic
+of failed logins. Use the method detrusion_report for that purpose, example:
 
   # in the user session controller
   @user_session = UserSession.new(params[:user_session])
