@@ -23,7 +23,7 @@ and insert the before_filter:
 
 3) Go to http://detrusion.com and create an account. You'll manage your black-/ whitelists and firewall settings there.
 
-4) Paste the configuration as explained in config/environments/production.rb:
+4) Paste the configuration as shown in the application settings on detrusion.com
 
   DETRUSION_CONFIG = {
     :user => 'your-username',
